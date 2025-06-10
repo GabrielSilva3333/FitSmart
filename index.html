@@ -1,76 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FitSmart - Sua Vida em Movimento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>FitSmart - Loja Fitness e Tecnologia</title>
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
       margin: 0;
       padding: 0;
-      background-color: #1C1C1C;
-      color: #FFFFFF;
     }
     header {
-      background: url('https://www.example.com/banner-video.gif') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #111;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      flex-direction: column;
     }
     header h1 {
-      font-size: 3rem;
-      color: #00C2FF;
+      margin: 0;
     }
-    header p {
-      font-size: 1.5rem;
-    }
-    .cta-button {
-      background-color: #A2FF00;
-      color: #1C1C1C;
-      padding: 15px 30px;
-      font-weight: bold;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 8px;
-      margin-top: 20px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
+    section#produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
     }
     .product {
-      background-color: #2a2a2a;
+      background: #fff;
+      margin: 15px;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
     }
-    .product h2, .product h3 {
-      color: #A2FF00;
+    .product h3 {
+      margin-top: 0;
     }
-    .product video, .product img {
+    .product img,
+    .product video {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
-    .button-whatsapp {
-      background-color: #00C2FF;
-      color: #FFFFFF;
-      padding: 10px;
+    .product ul {
+      padding-left: 20px;
+    }
+    .product a {
       display: inline-block;
-      border-radius: 5px;
-      text-decoration: none;
       margin-top: 10px;
+      padding: 10px;
+      background: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
     }
     footer {
-      background-color: #000;
-      color: #FFF;
+      background: #111;
+      color: #fff;
       text-align: center;
       padding: 20px;
     }
@@ -78,155 +67,122 @@
 </head>
 <body>
   <header>
-    <h1>🏋️‍♀️ Bem-vindo à FitSmart!</h1>
-    <p>Transforme seu treino com tecnologia e performance.</p>
-    <a class="cta-button" href="#produtos">🛒 Confira nossos 10 produtos incríveis para transformar seu treino!</a>
+    <h1>FitSmart</h1>
+    <p>Produtos inteligentes para sua saúde e bem-estar</p>
   </header>
 
-  <section>
-    <h2>🥇 Produto do Mês</h2>
+  <section id="produtos">
+    <!-- Garrafa Térmica -->
     <div class="product">
       <h3>Garrafa Térmica Inteligente FitSmart</h3>
-      <video controls src="https://www.example.com/video-garrafa.mp4"></video>
+      <video controls src="https://www.videvo.net/videvo_files/converted/2016_01/preview/160114_12_YoungWomanDrinkingWater.mp438638.webm" poster="https://images.pexels.com/videos/4859460/frame.jpg"></video>
       <ul>
-        <li>✅ Mantém temperatura por até 12h</li>
-        <li>✅ Display digital touch com temperatura real</li>
-        <li>✅ Design moderno e portátil</li>
-        <li>✅ Ideal para treinos, trilhas e escritório</li>
+        <li>Display LED com temperatura</li>
+        <li>Aço inoxidável com isolamento térmico</li>
+        <li>Ideal para academia, escritório e viagens</li>
       </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
     </div>
-  </section>
 
-  <section id="produtos">
-    <h2>🏋️‍♂️ Nossos Produtos</h2>
-
+    <!-- Smartwatch -->
     <div class="product">
       <h3>Smartwatch Fitness com Monitor Cardíaco</h3>
-      <img src="https://via.placeholder.com/800x400?text=Smartwatch" alt="Smartwatch">
+      <video controls src="https://www.videvo.net/videvo_files/converted/2022_08/preview/220720_B1_HD_12.mp443748.webm" poster="https://images.pexels.com/videos/9130464/frame.jpg"></video>
       <ul>
-        <li>✅ Monitoramento cardíaco em tempo real</li>
-        <li>✅ Contagem de passos e calorias</li>
-        <li>✅ Notificações do celular</li>
+        <li>Monitoramento de batimentos e sono</li>
+        <li>Notificações e controle de música</li>
+        <li>Resistente à água</li>
       </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
     </div>
 
+    <!-- Fone Bluetooth -->
     <div class="product">
       <h3>Fone Bluetooth Esportivo à Prova D’água</h3>
-      <img src="https://via.placeholder.com/800x400?text=Fone+Bluetooth" alt="Fone Bluetooth">
+      <video controls src="https://www.videvo.net/videvo_files/converted/2023_05/preview/230408_B1_HD_01.mp445748.webm" poster="https://images.pexels.com/videos/7858175/frame.jpg"></video>
       <ul>
-        <li>✅ Qualidade de som superior</li>
-        <li>✅ Ideal para treinos intensos</li>
-        <li>✅ Resistente ao suor e chuva</li>
+        <li>Design ergonômico e seguro</li>
+        <li>Cancelamento de ruído</li>
+        <li>Longa duração da bateria</li>
       </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
     </div>
 
-    <div class="product">
-      <h3>Cinto de Musculação Ajustável</h3>
-      <img src="https://via.placeholder.com/800x400?text=Cinto+Musculação" alt="Cinto de Musculação">
-      <ul>
-        <li>✅ Suporte firme para a lombar</li>
-        <li>✅ Material resistente e durável</li>
-        <li>✅ Fecho ajustável de alta segurança</li>
-      </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
-    </div>
-
-    <div class="product">
-      <h3>Garrafa Térmica com Display Digital</h3>
-      <img src="https://via.placeholder.com/800x400?text=Garrafa+Digital" alt="Garrafa Digital">
-      <ul>
-        <li>✅ Display digital de temperatura</li>
-        <li>✅ Conserva quente ou gelado por até 12h</li>
-        <li>✅ Ideal para academia ou escritório</li>
-      </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
-    </div>
-
-    <div class="product">
-      <h3>Corda de Pular Inteligente com Contador</h3>
-      <img src="https://via.placeholder.com/800x400?text=Corda+Inteligente" alt="Corda de Pular">
-      <ul>
-        <li>✅ Contador de saltos digital</li>
-        <li>✅ Ideal para cardio e emagrecimento</li>
-        <li>✅ Leve, ajustável e prática</li>
-      </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
-    </div>
-
-    <div class="product">
-      <h3>Massageador Muscular Portátil</h3>
-      <img src="https://via.placeholder.com/800x400?text=Massageador" alt="Massageador">
-      <ul>
-        <li>✅ Alívio instantâneo de dores musculares</li>
-        <li>✅ 6 níveis de intensidade</li>
-        <li>✅ Compacto e recarregável</li>
-      </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
-    </div>
-
+    <!-- Mini Bandas Elásticas -->
     <div class="product">
       <h3>Mini Bandas Elásticas de Resistência</h3>
-      <img src="https://via.placeholder.com/800x400?text=Bandas+Elásticas" alt="Bandas Elásticas">
+      <img src="https://images.pexels.com/photos/6815684/pexels-photo-6815684.jpeg" alt="Mini Bandas Elásticas">
       <ul>
-        <li>✅ 5 intensidades diferentes</li>
-        <li>✅ Fortalece pernas, glúteos e braços</li>
-        <li>✅ Fácil de usar em casa ou na academia</li>
+        <li>Ideal para treino em casa</li>
+        <li>Vários níveis de resistência</li>
+        <li>Compactas e portáteis</li>
       </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
     </div>
 
+    <!-- Corda de Pular -->
+    <div class="product">
+      <h3>Corda de Pular Inteligente com Contador</h3>
+      <img src="https://images.pexels.com/photos/6815684/pexels-photo-6815684.jpeg" alt="Corda de Pular">
+      <ul>
+        <li>Contador de saltos embutido</li>
+        <li>Cabos ajustáveis</li>
+        <li>Alta performance para queima calórica</li>
+      </ul>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
+    </div>
+
+    <!-- Massageador -->
+    <div class="product">
+      <h3>Massageador Muscular Portátil</h3>
+      <img src="https://images.pexels.com/photo/11372642/pexels-photo-11372642.jpeg" alt="Massageador">
+      <ul>
+        <li>Alívio de tensões musculares</li>
+        <li>Várias intensidades</li>
+        <li>Recarga USB</li>
+      </ul>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
+    </div>
+
+    <!-- Luva Fitness -->
     <div class="product">
       <h3>Luva Fitness Antiderrapante</h3>
-      <img src="https://via.placeholder.com/800x400?text=Luva+Fitness" alt="Luva Fitness">
+      <img src="https://images.pexels.com/photo/8478704/pexels-photo-8478704.jpeg" alt="Luva Fitness">
       <ul>
-        <li>✅ Protege as mãos durante o treino</li>
-        <li>✅ Material respirável e confortável</li>
-        <li>✅ Tamanhos ajustáveis</li>
+        <li>Proteção e conforto para musculação</li>
+        <li>Antiderrapante e ajustável</li>
+        <li>Durável e lavável</li>
       </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
     </div>
 
+    <!-- Rolo Miofascial -->
     <div class="product">
       <h3>Rolo de Liberação Miofascial</h3>
-      <img src="https://via.placeholder.com/800x400?text=Rolo+Miofascial" alt="Rolo Miofascial">
+      <img src="https://images.pexels.com/photos/6186127/pexels-photo-6186127.jpeg" alt="Rolo Miofascial">
       <ul>
-        <li>✅ Ideal para relaxamento e recuperação muscular</li>
-        <li>✅ Textura ergonômica</li>
-        <li>✅ Leve e fácil de transportar</li>
+        <li>Ajuda na recuperação muscular</li>
+        <li>Ideal para pós-treino</li>
+        <li>Textura em 3D para maior eficácia</li>
       </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
     </div>
 
+    <!-- Balança Digital -->
     <div class="product">
       <h3>Balança Digital com Bioimpedância</h3>
-      <img src="https://via.placeholder.com/800x400?text=Balança+Bioimpedância" alt="Balança Bioimpedância">
+      <img src="https://images.pexels.com/photo/7801352/pexels-photo-7801352.jpeg" alt="Balança Digital">
       <ul>
-        <li>✅ Mede gordura corporal, massa magra e mais</li>
-        <li>✅ Sincroniza com app no celular</li>
-        <li>✅ Alta precisão e design moderno</li>
+        <li>Mensura gordura corporal e IMC</li>
+        <li>Conexão com app fitness</li>
+        <li>Alta precisão e design moderno</li>
       </ul>
-      <a class="button-whatsapp" href="https://wa.me/5562982014870">COMPRAR PELO WHATSAPP</a>
+      <a href="https://wa.me/5562982014870">COMPRAR</a>
     </div>
-  </section>
-
-  <section>
-    <h2>🗣️ Depoimentos</h2>
-    <p>“Depois que comecei a usar os produtos da FitSmart, meus treinos evoluíram MUITO!” – João R.</p>
-    <p>“Entrega rápida, qualidade top e o atendimento é excelente!” – Carla M.</p>
-  </section>
-
-  <section>
-    <h2>❓ FAQ</h2>
-    <p><strong>🕐 Em quanto tempo recebo meu pedido?</strong><br> O prazo médio é de 7 a 15 dias úteis, com código de rastreio.</p>
-    <p><strong>📦 Posso trocar um produto com defeito?</strong><br> Sim, garantimos sua troca sem custo em até 7 dias após o recebimento.</p>
-    <p><strong>📲 Posso comprar direto pelo WhatsApp?</strong><br> Sim! Clique no botão “Comprar pelo WhatsApp” no produto desejado.</p>
   </section>
 
   <footer>
-    <p>© 2025 FitSmart - Sua Vida em Movimento | Contato: (62) 98201-4870</p>
+    <p>© 2025 FitSmart - Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
